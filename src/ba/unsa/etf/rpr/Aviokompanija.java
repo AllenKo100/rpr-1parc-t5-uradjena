@@ -53,4 +53,17 @@ public class Aviokompanija {
 
         return pomocni;
     }
+
+    public Map<String, List<Let>> dolazniLetovi() {
+        Map<String, List<Let>> mapa = new HashMap<>();
+
+        for(Let l : letovi){
+            String grad = l.getDolazniAerodrom().getGrad();
+            if(!mapa.containsKey(grad)){
+                mapa.put(grad, new ArrayList<Let>());
+            }
+            mapa.get(grad).add(l);
+        }
+        return mapa;
+    }
 }

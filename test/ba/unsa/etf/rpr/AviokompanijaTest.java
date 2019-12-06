@@ -45,7 +45,7 @@ class AviokompanijaTest {
         );
     }
 
-    /*@Test
+    @Test
     void dolazniLetovi() throws IlegalnaSifraAerodroma, SizeLimitExceededException {
         Aviokompanija airBosnia = new Aviokompanija(6);
         Aerodrom sarajevo = new Aerodrom("Međunarodni aerodrom Sarajevo", "Sarajevo", "SJJ", 43.858, 18.407);
@@ -85,7 +85,7 @@ class AviokompanijaTest {
             if (l.getPolazniAerodrom().getSifra().equals("JFK")) ok++;
         }
         assertEquals(2, ok);
-    }*/
+    }
 
     @Test
     void uZraku() throws IlegalnaSifraAerodroma, SizeLimitExceededException {
